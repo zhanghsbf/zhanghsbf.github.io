@@ -344,17 +344,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/08/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -494,26 +492,15 @@
       
         
           
-            <h2 id="利用hexo快速搭建个人博客"><a href="#利用hexo快速搭建个人博客" class="headerlink" title="利用hexo快速搭建个人博客"></a>利用hexo快速搭建个人博客</h2><p>作为一个搞IT的，有个自己的博客还是蛮舒服的一件事，可以把自己的成长过程记录下来，到时候回过头来一看，当年的我这么笨啊。<br>经过一番搜索，最终选定了<em>hexo+github</em>来搭建自己的博客，一方面简单易行，另一方面不用自己每个月花钱去租主机。<br>不过这种方式建立的博客是静态页面，也就是说每次上传文章时，需要在本地写好，然后重新部署上去。</p>
-<h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><ul>
-<li>node.js,可以直接百度搜索，去官网下载即可。</li>
-<li>安装Hexo  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
-<li>然后新建一个文件夹，用hexo初始化  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir hexo</span><br><span class="line">cd hexo</span><br><span class="line">hexo init</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
-<li>生成网站  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
-<li>hexo文件夹  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo/</span><br><span class="line"> |- node_modules/  # hexo需要的模块，不需要上传GitHub</span><br><span class="line"> |- themes/        # 主题文件，需要上传GitHub的dev分支</span><br><span class="line"> |- sources/       # 博文md文件，需要上传GitHub的dev分支</span><br><span class="line"> |- public/        # 生成的静态页面，由hexo deploy自动上传到gh-page分支</span><br><span class="line"> |- package.json   # 记录hexo需要的包信息，不需要上传GitHub</span><br><span class="line"> |- \_config.yml    # 全局配置文件，需要上传GitHub的dev分支</span><br><span class="line"> |- .gitignore     # hexo生成默认的.gitignore，它已经配置好了不需要上传的hexo文件</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h1><pre><code>新建一个资料库 yourusername.github.io 一定要这个名字，前面是你的账号名称，然后用ssh绑定好Github，详情可百度。
-</code></pre><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>创建的hexo项目根目录下的_config文件，找到deploy，按以下填写，格式要对，deploy下面的开头有空格，冒号后面也有一个空格<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository: 你创建的资料库clone按钮ssh里的东西</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><pre><code>部署之前要安装一个扩展包 ：npm install hexo-deployer-git --save
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-就部署成功了
-</code></pre><h1 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h1><pre><code>hexo new 文章标题
-然后在source下的_post里找到这个md文件，用markdown语法写完后
-再按上面的方法重新部署一次。
-</code></pre>
-          
+          利用hexo快速搭建个人博客作为一个搞IT的，有个自己的博客还是蛮舒服的一件事，可以把自己的成长过程记录下来，到时候回过头来一看，当年的我这么笨啊。经过一番搜索，最终选定了hexo+github来搭建自己的博客，一方面简单易行，另一方面不用自己每个月花钱去租主机。不过这种方式建立的博客是静态页面，也
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/11/build-hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
