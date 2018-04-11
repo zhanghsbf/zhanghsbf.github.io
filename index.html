@@ -443,6 +443,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/其他/" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -478,7 +500,7 @@
 <li>安装Hexo  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
 <li>然后新建一个文件夹，用hexo初始化  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir hexo</span><br><span class="line">cd hexo</span><br><span class="line">hexo init</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
 <li>生成网站  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">	</span><br></pre></td></tr></table></figure></li>
-<li>hexo文件夹  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo/</span><br><span class="line"> |- node_modules/  # hexo需要的模块，不需要上传GitHub</span><br><span class="line"> |- themes/        # 主题文件，需要上传GitHub的dev分支</span><br><span class="line"> |- sources/       # 博文md文件，需要上传GitHub的dev分支</span><br><span class="line"> |- public/        # 生成的静态页面，由hexo deploy自动上传到gh-page分支</span><br><span class="line"> |- package.json   # 记录hexo需要的包信息，不需要上传GitHub</span><br><span class="line"> |- _config.yml    # 全局配置文件，需要上传GitHub的dev分支</span><br><span class="line"> |- .gitignore     # hexo生成默认的.gitignore，它已经配置好了不需要上传的hexo文件</span><br></pre></td></tr></table></figure>
+<li>hexo文件夹  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo/</span><br><span class="line"> |- node_modules/  # hexo需要的模块，不需要上传GitHub</span><br><span class="line"> |- themes/        # 主题文件，需要上传GitHub的dev分支</span><br><span class="line"> |- sources/       # 博文md文件，需要上传GitHub的dev分支</span><br><span class="line"> |- public/        # 生成的静态页面，由hexo deploy自动上传到gh-page分支</span><br><span class="line"> |- package.json   # 记录hexo需要的包信息，不需要上传GitHub</span><br><span class="line"> |- \_config.yml    # 全局配置文件，需要上传GitHub的dev分支</span><br><span class="line"> |- .gitignore     # hexo生成默认的.gitignore，它已经配置好了不需要上传的hexo文件</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h1><pre><code>新建一个资料库 yourusername.github.io 一定要这个名字，前面是你的账号名称，然后用ssh绑定好Github，详情可百度。
@@ -577,6 +599,15 @@
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
